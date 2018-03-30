@@ -2,7 +2,7 @@
 
 namespace Derungsoft.WolSharp
 {
-    internal class MacAddressValidationResult
+    internal class PhysicalAddressValidationResult
     {
         public bool HasErrors { get; set; }
 

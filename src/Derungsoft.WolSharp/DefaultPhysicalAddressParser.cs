@@ -51,7 +51,7 @@ namespace Derungsoft.WolSharp
             return new string(macAddress.Where(p => _supportedSeparators.All(s => s != p)).ToArray());
         }
 
-        private MacAddressValidationResult Validate(string physicalAddress)
+        private PhysicalAddressValidationResult Validate(string physicalAddress)
         {
             var validationErrorMessages = new List<string>();
 
@@ -80,7 +80,7 @@ namespace Derungsoft.WolSharp
                                             $"separators are: {Environment.NewLine + string.Join(Environment.NewLine, _supportedSeparators.Select(s => $"'{s}'"))}");
             }
 
-            return new MacAddressValidationResult
+            return new PhysicalAddressValidationResult
             {
                 HasErrors = validationErrorMessages.Any(),
                 ValidationErrors = validationErrorMessages

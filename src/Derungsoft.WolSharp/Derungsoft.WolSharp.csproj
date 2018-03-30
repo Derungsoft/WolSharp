@@ -6,11 +6,13 @@
     <Authors>Robin Derungs</Authors>
     <PackageProjectUrl>https://github.com/Derungsoft/WolSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Derungsoft/WolSharp</RepositoryUrl>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
+    <Version>1.0.3</Version>
     <Description>A simple .NET Standard library for sending WakeOnLan packets (Magic packet) over ethernet</Description>
     <PackageLicenseUrl>https://github.com/Derungsoft/WolSharp/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Derungsoft/WolSharp/master/icon.png</PackageIconUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
