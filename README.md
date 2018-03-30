@@ -18,7 +18,7 @@ Install-Package Derungsoft.WolSharp
 using Derungsoft.WolSharp;
 // ...
 
-// Create awakener instance with default MacAddressParser
+// Create awakener instance with default PhysicalAddressParser
 var awakener = new Awakener();
 
 // Send WoL to "AA-00-BB-11-CC-22"
@@ -31,17 +31,17 @@ awakener.Wake("AA-00-BB-11-CC-22");
 using Derungsoft.WolSharp;
 // ...
 
-// Create awakener instance with default MacAddressParser
+// Create awakener instance with default PhysicalAddressParser
 var awakener = new Awakener();
 
 // Send WoL to "AA-00-BB-11-CC-22"
 await awakener.WakeAsync("AA-00-BB-11-CC-22");
 ```
 
-## Using custom MacAddressParser
-### Create custom MacAddressParser class
+## Using custom PhysicalAddressParser
+### Create custom PhysicalAddressParser class
 ```C#
-public class MyMacAddressParser : IMacAddressPaser
+public class MyPhysicalAddressParser : IPhysicalAddressParser
 {
     //Implement Parse methods
     //...
@@ -49,11 +49,11 @@ public class MyMacAddressParser : IMacAddressPaser
 ```
 ### Pass parser to Awakener constructor
 ```C#
-// Create custom MacAddressParser
-var macAddressParser = new MyMacAddressParser();
+// Create custom PhysicalAddressParser
+var physicalAddressParser = new MyPhysicalAddressParser();
 
 // Pass custom parser to constructor
-var awakener = new Awakener(macAddressParser);
+var awakener = new Awakener(physicalAddressParser);
 
 await awakener.WakeAsync("AA-00-BB-11-CC-22");
 ```
@@ -61,7 +61,7 @@ await awakener.WakeAsync("AA-00-BB-11-CC-22");
 ## Dependency injection
 
 1. Register ```IAwakener``` using ```Awakener```
-2. Register ```IMacAddressParser``` using ```DefaultMacAddressParser``` or a custom implementation
+2. Register ```IPhysicalAddressParser``` using ```DefaultPhysicalAddressParser``` or a custom implementation
 
 
 [1]: https://www.nuget.org/packages/Derungsoft.WolSharp/
