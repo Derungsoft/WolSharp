@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CD38B1D7-870C-4183-BCEB-A602776BC531}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Derungsoft.WolSharp", "Derungsoft.WolSharp\Derungsoft.WolSharp.csproj", "{EF747A91-967F-4224-84E0-8B6CE7CAC92C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF747A91-967F-4224-84E0-8B6CE7CAC92C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF747A91-967F-4224-84E0-8B6CE7CAC92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF747A91-967F-4224-84E0-8B6CE7CAC92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF747A91-967F-4224-84E0-8B6CE7CAC92C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF747A91-967F-4224-84E0-8B6CE7CAC92C} = {CD38B1D7-870C-4183-BCEB-A602776BC531}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24848EB0-C2C5-4EE6-8143-780FAB442BE4}
+	EndGlobalSection
+EndGlobal
