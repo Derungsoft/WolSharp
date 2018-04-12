@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Net.Mime;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using StackExchange.Redis;
 
 namespace Derungsoft.WolSharp.WebApi.Controllers
 {
