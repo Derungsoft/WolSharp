@@ -11,6 +11,27 @@ Install the [NuGet package][1] of this library using
 Install-Package Derungsoft.WolSharp
 ```
 
+# ARM32 Wake on Lan Server for Docker (Raspberry Pi)
+
+You can set up your own Wake On Lan Server running inside Docker on a Raspberry Pi!
+
+Just install Docker on your Pi and then execute the following command:
+```
+sudo docker run --name WolSharp -d -it --restart unless-stopped --network=host derungsoft/wolsharp:0.1
+ ```
+
+ This command will download and run the WOL Server which runs on port 80.
+
+ If you don't want the Server to automatically start on boot, you can remove "--restart unless-stopped"
+
+ Then wake up other computers by calling this URL:
+
+```
+ http://192.168.1.123/api/wake/55-33-44-55-AA-BB
+```
+
+Just replace the IP and MAC address and you're good to go.
+
 # Usage
 
 ## Basic usage
