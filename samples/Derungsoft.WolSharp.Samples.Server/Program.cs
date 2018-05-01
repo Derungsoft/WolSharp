@@ -1,19 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 
-namespace Derungsoft.WolSharp.WebApi
+namespace Derungsoft.WolSharp.Samples.Server
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("ASPNETCORE_URLS")))
+            {
+                Console.WriteLine("No ASPNETCORE_URLS environment variable set. Using http://+:80");
+                Environment.SetEnvironmentVariable("ASPNETCORE_URLS", "http://+:80");
+            }
+
             BuildWebHost(args).Run();
         }
 

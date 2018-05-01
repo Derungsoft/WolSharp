@@ -3,13 +3,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace Derungsoft.WolSharp.WebApi.Controllers
+namespace Derungsoft.WolSharp.Samples.Server.Controllers
 {
     public class WakeOnLanResponse
     {
         public WakeOnLanResponse()
         {
-
         }
 
         public WakeOnLanResponse(string error)
@@ -51,7 +50,7 @@ namespace Derungsoft.WolSharp.WebApi.Controllers
 
         [HttpPost]
         [Consumes("application/x-www-form-urlencoded")]
-        public async Task<WakeOnLanResponse> Post([FromForm]string macAddress)
+        public async Task<WakeOnLanResponse> Post([FromForm] string macAddress)
         {
             try
             {

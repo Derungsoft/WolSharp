@@ -1,8 +1,0 @@
-version: '3'
-
-services:
-  derungsoft.wolsharp.webapi:
-    image: derungsoft.wolsharp.webapi
-    build:
-      context: .
-      dockerfile: Derungsoft.WolSharp.WebApi/Dockerfile

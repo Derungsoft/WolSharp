@@ -1,0 +1,1 @@
+docker build -t derungsoft/wolsharp:debian-arm32 --file Dockerfile.debian-arm32 .
